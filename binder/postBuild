@@ -1,3 +1,6 @@
 jupyter serverextension enable voila --sys-prefix
+jupyter nbextension enable --py widgetsnbextension
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+jupyter labextension install @jupyter-voila/jupyterlab-preview
 
 # sed -i 's/{article}/{article}\n\\usepackage{xeCJK}/' $(find ../../.. -name "article.tplx")
